@@ -41,11 +41,11 @@ git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/l
 
 git clone https://github.com/sbwml/luci-app-alist package/alist
 # 添加lucky大吉
-rm -rf package/lucky
-git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
-if [[ $WRT_REPO != *"lede"* ]]; then
-	UPDATE_PACKAGE "daed" "QiuSimons/luci-app-daed" "master"
-fi
+#rm -rf package/lucky
+#git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
+#if [[ $WRT_REPO != *"lede"* ]]; then
+#	UPDATE_PACKAGE "daed" "QiuSimons/luci-app-daed" "master"
+#fi
 
 if [[ $WRT_REPO == *"openwrt-6.x"* ]]; then
 	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
