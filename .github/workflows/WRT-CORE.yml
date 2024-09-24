@@ -147,7 +147,7 @@ jobs:
 
       - name: Update Feeds
         run: |
-          cd ./wrt/package/
+          cd ./wrt/
 
           $GITHUB_WORKSPACE/Scripts/feeds.sh
 
