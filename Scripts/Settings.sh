@@ -76,8 +76,8 @@ sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
 # 设置PPPOE上网的账号和密码,本地编译时在文件的第182和183行左右
 #  sed -i 's/username='"'"'username'"'"'/username='"'"'601'"'"'/g; s/password='"'"'password'"'"'/password='"'"'18639812928'"'"'/g' package/base-files/files/bin/config_generate
 #配置文件修改
-echo "CONFIG_PACKAGE_luci=y" >> ./.config
-echo "CONFIG_LUCI_LANG_zh_Hans=y" >> ./.config
+#echo "CONFIG_PACKAGE_luci=y" >> ./.config
+#echo "CONFIG_LUCI_LANG_zh_Hans=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 
