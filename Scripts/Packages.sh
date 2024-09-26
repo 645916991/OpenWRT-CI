@@ -35,6 +35,10 @@ UPDATE_PACKAGE "luci-app-advancedplus" "VIKINGYFY/luci-app-advancedplus" "main"
 UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/luci-app-wolplus" "main"
+
+UPDATE_PACKAGE "nas-packages" "linkease/nas-packages" "master"
+UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-packages-luci" "main"
+
 # 使用最新的Go、添加最新版alist网盘
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
