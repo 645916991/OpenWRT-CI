@@ -45,13 +45,3 @@ if [[ $WRT_TARGET == *"IPQ"* ]]; then
 	echo "CONFIG_ATH11K_MEM_PROFILE_1G=n" >> ./.config
 	echo "CONFIG_ATH11K_MEM_PROFILE_512M=y" >> ./.config
 fi
-# 添加luci-app-dockerman、docker-compose
-echo "CONFIG_PACKAGE_luci-app-dockerman=y" >> ./.config
-echo "CONFIG_PACKAGE_docker-compose=y" >> ./.config
-# 添加openssh-sftp-server使得finalshell得以看见文件列表
-echo "CONFIG_PACKAGE_openssh-sftp-server=y" >> ./.config
-# 图像化界面quickstart
-echo "CONFIG_PACKAGE_quickstart=y" >> ./.config
-echo "CONFIG_PACKAGE_luci-app-quickstart=y" >> ./.config
-# 图形化流量监控
-echo "CONFIG_PACKAGE_luci-app-wrtbwmon=y" >> ./.config
