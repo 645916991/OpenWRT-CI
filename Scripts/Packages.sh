@@ -24,7 +24,7 @@ UPDATE_PACKAGE() {
 UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "master"
 #UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "js"
 
-UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
+#UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
 UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main"
 UPDATE_PACKAGE "nekoclash" "Thaolga/luci-app-nekoclash" "main"
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev" "pkg"
@@ -36,14 +36,13 @@ UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/luci-app-wolplus" "main"
 
+# 添加商店
 UPDATE_PACKAGE "nas-packages" "linkease/nas-packages" "master"
 UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-packages-luci" "main"
 
-# 使用最新的Go、添加最新版alist网盘
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+# 添加alist网盘
+UPDATE_PACKAGE "luci-app-alist" "sbwml/luci-app-alist" "main"
 
-git clone https://github.com/sbwml/luci-app-alist package/alist
 # 添加lucky大吉
 rm -rf package/lucky
 git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
