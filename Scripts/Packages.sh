@@ -22,7 +22,7 @@ UPDATE_PACKAGE() {
 
 #UPDATE_PACKAGE "包名" "项目地址" "项目分支" "pkg/name，可选，pkg为从大杂烩中单独提取包名插件；name为重命名为包名"
 UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "master"
-UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "js"
+#UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "js"
 
 UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
 UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main"
@@ -47,9 +47,7 @@ git clone https://github.com/sbwml/luci-app-alist package/alist
 # 添加lucky大吉
 rm -rf package/lucky
 git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
-if [[ $WRT_REPO != *"lede"* ]]; then
-	UPDATE_PACKAGE "daed" "QiuSimons/luci-app-daed" "master"
-fi
+
 
 if [[ $WRT_REPO == *"openwrt-6.x"* ]]; then
 	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
