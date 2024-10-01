@@ -77,7 +77,7 @@ CONFIG_PACKAGE_luci-app-autoreboot=y
 #进阶设置
 CONFIG_PACKAGE_luci-app-advancedplus=y
 #alist
-CONFIG_PACKAGE_luci-app-alist=y
+#CONFIG_PACKAGE_luci-app-alist=y
 #添加istore商店
 CONFIG_PACKAGE_luci-app-istorex=y
 #添加docker
