@@ -40,11 +40,11 @@ UPDATE_PACKAGE "nas-packages" "linkease/nas-packages" "master"
 UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-packages-luci" "main"
 
 # 添加alist网盘
-UPDATE_PACKAGE "luci-app-alist" "sbwml/luci-app-alist" "main"
+#UPDATE_PACKAGE "luci-app-alist" "sbwml/luci-app-alist" "main"
 
 # 添加lucky大吉
-rm -rf package/lucky
-git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
+#rm -rf package/lucky
+#git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
 
 
 if [[ $WRT_REPO == *"openwrt-6.x"* ]]; then
