@@ -61,6 +61,7 @@ CONFIG_PACKAGE_luci-lua-runtime=y
 CONFIG_PACKAGE_wpad-openssl=y
 #科学插件调整
 CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-passwall=y
 #增加插件
 CONFIG_PACKAGE_luci-app-upnp=y
 #网络共享
@@ -77,7 +78,7 @@ CONFIG_PACKAGE_luci-app-advancedplus=y
 #alist
 #CONFIG_PACKAGE_luci-app-alist=y
 #添加istore商店
-CONFIG_PACKAGE_luci-app-istorex=y
+#CONFIG_PACKAGE_luci-app-istorex=y
 #添加docker
 CONFIG_PACKAGE_luci-app-dockerman=y
 #添加openssh-sftp-server使得finalshell得以看见文件列表
